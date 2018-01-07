@@ -290,6 +290,7 @@ GameObject:
   - component: {fileID: 1036569940}
   - component: {fileID: 1036569939}
   - component: {fileID: 1036569938}
+  - component: {fileID: 1036569943}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -307,7 +308,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
@@ -378,6 +379,17 @@ Transform:
   m_Father: {fileID: 1995851809}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1036569943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1036569937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf909d6c95c54df6b5c96d87306164f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1219570474
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +664,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1995851809}
+  - component: {fileID: 1995851810}
   m_Layer: 0
   m_Name: Player_Input_Controller
   m_TagString: Untagged
@@ -675,3 +688,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1995851810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1995851808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86594d308a73f4a6b8814ff0d5615e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftBat: {fileID: 1025743904}
+  rightBat: {fileID: 1659419714}
